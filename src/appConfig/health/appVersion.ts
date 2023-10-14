@@ -1,8 +1,8 @@
-export const commitID = `33cdd0c458fbbd99a46585d0b70cb5a837c6a0db`;
+export const commitID = `08ffe9a6314983fd8f7874268c8749a3179e211f`;
     
-  export const commitMssg = `fix para inicializar envs secretos cuando no existen`;
+  export const commitMssg = `Navbar, footer, home y contacto`;
   
-  export const commitDate = `Sat Oct 14 2023 12:19:10 GMT-0600 (Central Standard Time)`;
+  export const commitDate = `Sat Oct 14 2023 17:43:53 GMT-0600 (Central Standard Time)`;
   
   export const commitAuthor = `sb`;
   

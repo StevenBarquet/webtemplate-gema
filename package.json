@@ -61,6 +61,7 @@
     "wrangler": "3.6.0"
   },
   "dependencies": {
+    "@qwikest/icons": "0.0.10",
     "qwik-forge-grid": "2.3.3"
   }
 }

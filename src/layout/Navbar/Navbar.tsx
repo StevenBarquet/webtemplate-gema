@@ -2,35 +2,38 @@
 import { component$ } from '@builder.io/qwik';
 // ---Styles
 import style from './Navbar.module.scss';
-import { Mcol, Mrow } from 'qwik-forge-grid';
-import { useLocation, Link } from '@builder.io/qwik-city';
+import { Fcol, Frow } from 'qwik-forge-grid';
+import { Link } from '@builder.io/qwik-city';
 import { customResponsive } from 'src/utils/functions/responsiveUtils';
+import { Logo } from './Logo/Logo';
+import { NavLink } from './NavLink/NavLink';
 
 /**
  * Navbar Component:  Descripción del comportamiento...
  */
 export const Navbar = component$(() => {
   // -----------------------CONSTS, HOOKS, STATES
-  const location = useLocation();
   // -----------------------MAIN METHODS
   // -----------------------AUX METHODS
   // -----------------------RENDER
   return (
     <header class={style.Navbar}>
-      <Mrow>
-        <Mcol {...customResponsive(40, 100)}>
-          <Link href="/">Home{location.url.pathname}</Link>
-        </Mcol>
-        <Mcol {...customResponsive(15, 50)}>
-          <Link href="/health">Health</Link>
-        </Mcol>
-        <Mcol {...customResponsive(15, 50)}>
-          <Link href="/ssr">SSR</Link>
-        </Mcol>
-        <Mcol {...customResponsive(15, 50)}>
-          <Link href="/err">Err</Link>
-        </Mcol>
-      </Mrow>
+      <Frow vAlign="middle" hAlign="center">
+        <Fcol {...customResponsive(40, 100)}>
+          <Link href="/">
+            <Logo />
+          </Link>
+        </Fcol>
+        <Fcol {...customResponsive(15, 33)}>
+          <NavLink href="/" label="INICIO" />
+        </Fcol>
+        <Fcol {...customResponsive(15, 33)}>
+          <NavLink href="/servicios/" label="SERVICIOS" />
+        </Fcol>
+        <Fcol {...customResponsive(15, 100)}>
+          <NavLink href="/contacto/" label="CONTACTO" />
+        </Fcol>
+      </Frow>
     </header>
   );
 });

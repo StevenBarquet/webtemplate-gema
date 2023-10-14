@@ -5,14 +5,62 @@
 .Home {
   font-family: "Inter";
   margin: 0;
-  padding: 0;
 
-  .ReduxTester {
-    @include onlyIn(xl) {
-      background-color: plum;
-    }
+  @include onlyIn(mob) {
+    width: 96%;
+    margin: 10px auto;
+    padding: 20px;
   }
-  @include onlyIn(lg) {
-    background-color: #f28181;
+  @include onlyIn(desk) {
+    width: 88%;
+    margin: 10px auto;
+  }
+
+  h1 {
+    font-family: "Courier New", Courier, monospace;
+    text-align: center;
+    font-weight: 500;
+    border-bottom: 1px solid $colorOrange;
+    padding: 8px;
+    font-size: 23px;
+  }
+  img {
+    display: block;
+    width: 80%;
+    height: auto;
+    border-radius: 15px;
+    margin: 25px auto;
+  }
+
+  h2 {
+    font-family: "Courier New", Courier, monospace;
+    text-align: start;
+    font-weight: 500;
+    font-size: 26px;
+    color: $colorOrange;
+  }
+
+  .post {
+    @include onlyIn(desk) {
+      padding: 120px;
+    }
+    @include onlyIn(md) {
+      padding: 70px;
+    }
+    font-size: 19px;
+    font-weight: 400;
+    text-align: start;
+  }
+
+  h3 {
+    font-family: "Courier New", Courier, monospace;
+    text-align: start;
+    font-weight: 300;
+    font-size: 19px;
+  }
+  a {
+    text-decoration: none;
+    color: $colorOrange;
+    font-size: 14px;
   }
 }

@@ -5,11 +5,36 @@
 .Footer {
   // ajusta la altura de $footerHeight
   font-family: "Inter";
-  background-color: $colorPurple5;
+  background-color: #6969699d;
+  width: 100%;
+  a {
+    text-decoration: none;
+  }
 
-  display: grid;
-  align-items: center;
-  justify-content: center;
+  h4 {
+    padding-top: 20px;
+    font-family: "Courier New", Courier, monospace;
+    text-align: center;
+    font-weight: 400;
+    font-size: 23px;
+    color: $colorOrange;
+  }
+  h5 {
+    font-family: "Courier New", Courier, monospace;
+    text-align: center;
+    font-weight: 300;
+    font-size: 14px;
+    color: $colorOrange;
+  }
+  h6 {
+    text-align: center;
+    font-size: 14px;
+    font-family: "Courier New", Courier, monospace;
+    a {
+      color: $colorOrange;
+    }
+  }
+
   @include onlyIn(desk) {
     height: $footerHeight;
   }
@@ -18,7 +43,7 @@
   }
 }
 
-// // desk mov xs sm md lg xl xxl
+// // desk mob xs sm md lg xl xxl
 // @include onlyIn(lg) {
 //   background-color: #f28181;
 // }

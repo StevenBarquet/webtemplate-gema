@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unnecessary-type-assertion */
 import dev from './profiles/dev';
 import prod from './profiles/prod';
 
@@ -13,5 +12,5 @@ const currentDev = dev;
  */
 export const envs = {
   ...(NODE_ENV === 'production' ? prod : currentDev),
-  NODE_ENV: NODE_ENV as 'production' | 'development',
+  NODE_ENV: NODE_ENV,
 };

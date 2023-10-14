@@ -1,22 +1,21 @@
 import { component$ } from '@builder.io/qwik';
 import type { DocumentHead } from '@builder.io/qwik-city';
-import { Home } from 'src/pages/Home/Home';
+import { ContactP } from 'src/pages/ContactP/ContactP';
 
 export default component$(() => {
   return (
     <>
-      <Home />
+      <ContactP />
     </>
   );
 });
 
 export const head: DocumentHead = {
-  title: 'SEMBLANZA | GEMAAYECAC',
+  title: 'CONTACTO | GEMAAYECAC',
   meta: [
     {
       name: 'description',
-      content:
-        'Abogada por la UNAM. Realizó estudios de Maestría en Derechos Humanos en el Instituto Tecnológico Autónomo de México (ITAM), Doctorado en Mediación y Negociación en el Instituto de Mediación de México. Actualmente cursa el master en Mediación, Negociación y Resolución...',
+      content: 'Qwik site description',
     },
   ],
   links: [

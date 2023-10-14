@@ -4,9 +4,12 @@
 
 .Navbar {
   font-family: "Inter";
-  background-color: $colorPurple5;
+  background-color: #6969699d;
   display: grid;
   align-items: center;
+  width: 88%;
+  margin: 0 6%;
+  border-bottom: 1px solid $colorOrange;
   @include onlyIn(desk) {
     height: $headerHeight;
   }
@@ -14,12 +17,48 @@
     height: $headerHeightMobile;
   }
   a {
-    padding: 10px 0;
-    text-align: center;
-    display: block;
+    text-decoration: none;
+    color: $colorLight1;
   }
-  a:first-child {
-    text-align: start;
-    padding-left: 10px;
+
+  .Logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 300;
+
+    img {
+      width: 45px;
+      height: auto;
+    }
+
+    section {
+      border-right: 1px solid $colorOrange;
+      padding: 6px 7px;
+      color: $colorOrange;
+      font-weight: 500;
+      font-size: 20px;
+      margin-right: 7px;
+      span {
+        color: $colorLight1;
+      }
+    }
+  }
+
+  .NavLink {
+    font-weight: 500;
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+    padding: 7px 0px;
+    &:hover {
+      background-color: $colorLight7;
+    }
+
+    &.active {
+      color: $colorOrange;
+    }
   }
 }

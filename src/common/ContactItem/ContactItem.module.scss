@@ -1,0 +1,27 @@
+@import "/src/styles/variables";
+@import "/src/styles/animations";
+@import "/src/styles/utils";
+
+.ContactItem {
+  font-family: "Inter";
+  text-align: center;
+  font-weight: 16px;
+  font-weight: 300;
+  text-decoration: none;
+  color: $colorLight;
+  svg {
+    display: block;
+    width: 30px;
+    height: auto;
+    color: $colorOrange;
+    margin: auto;
+  }
+  &:hover {
+    color: $colorOrange7;
+  }
+}
+
+// // desk mob xs sm md lg xl xxl
+// @include onlyIn(lg) {
+//   background-color: #f28181;
+// }

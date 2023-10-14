@@ -1,0 +1,49 @@
+@import "/src/styles/variables";
+@import "/src/styles/animations";
+@import "/src/styles/utils";
+
+.ContactP {
+  font-family: "Inter";
+
+  .Logo {
+    width: 220px;
+    margin: 50px auto 25px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: 300;
+
+    img {
+      width: 80px;
+      height: auto;
+    }
+
+    section {
+      border-bottom: 1px solid $colorOrange;
+      padding: 6px 7px;
+      color: $colorOrange;
+      font-weight: 500;
+      font-size: 30px;
+      margin-right: 7px;
+      span {
+        color: $colorLight1;
+      }
+    }
+    p {
+      font-size: 22px;
+    }
+  }
+
+  .forge-row-element {
+    @include onlyIn(desk) {
+      width: 70%;
+      margin: auto;
+    }
+  }
+}
+
+// desk mob xs sm md lg xl xxl
+// @include onlyIn(lg) {
+//   background-color: #f28181;
+// }

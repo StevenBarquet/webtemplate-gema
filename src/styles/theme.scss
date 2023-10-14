@@ -16,6 +16,10 @@ main {
   margin: 0px;
   padding: 0px;
   font-size: 16px;
+  background: url(/images/background.webp) no-repeat center center fixed;
+  background-size: cover;
+  min-height: 100%;
+  color: $colorLight1;
 }
 
 p {
