@@ -86,11 +86,11 @@ function processHeading(parts: (string | null)[], index: number) {
   }
 }
 
-export function useStringToHtml(originalText: string, linkProps?: MarkupJsxProps) {
+export function stringToHtml(originalText: string, linkProps?: MarkupJsxProps) {
   const hrefs = linkProps?.hrefs || [];
   const anchorProps = linkProps?.anchorProps || [];
 
-  return component$(() => {
+  const Jsx = component$(() => {
     const parts: (string | null)[] = originalText.split(
       /(<\/?LinkCustom>|<\/?span.*?>|<\/?Anchor>|<\/?b>|<\/?section>|<\/?article>|<h[1-6]>|<\/h[1-6]>)/g,
     );
@@ -116,4 +116,10 @@ export function useStringToHtml(originalText: string, linkProps?: MarkupJsxProps
 
     return <>{nodes}</>;
   });
+
+  return (
+    <>
+      <Jsx />
+    </>
+  );
 }

@@ -2,7 +2,7 @@
 import { component$ } from '@builder.io/qwik';
 // ---Styles
 import style from './Services.module.scss';
-import { useStringToHtml } from 'src/utils/functions/qwikUtils';
+import { stringToHtml } from 'src/utils/functions/qwikUtils';
 // Texto de prueba
 const originalText = `
 <h1>Pruebita</h1>
@@ -28,7 +28,6 @@ const hrefs = ['/ruta-interna'];
  */
 export const Services = component$(() => {
   // -----------------------CONSTS, HOOKS, STATES
-  const Aaa = useStringToHtml(originalText, { anchorProps, hrefs });
   // -----------------------MAIN METHODS
   // -----------------------AUX METHODS
   // -----------------------RENDER
@@ -48,7 +47,7 @@ export const Services = component$(() => {
           <Link href="/capacitacion">Capacitación</Link>
         </li>
       </ul> */}
-      <Aaa />
+      {stringToHtml(originalText, { anchorProps, hrefs })}
     </div>
   );
 });
