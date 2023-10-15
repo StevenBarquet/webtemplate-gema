@@ -1,8 +1,8 @@
-export const commitID = `08ffe9a6314983fd8f7874268c8749a3179e211f`;
+export const commitID = `ba44f42bf996ffde52fa44a1bc7e54a828807387`;
     
-  export const commitMssg = `Navbar, footer, home y contacto`;
+  export const commitMssg = `color correction`;
   
-  export const commitDate = `Sat Oct 14 2023 17:43:53 GMT-0600 (Central Standard Time)`;
+  export const commitDate = `Sun Oct 15 2023 11:13:14 GMT-0600 (Central Standard Time)`;
   
   export const commitAuthor = `sb`;
   
