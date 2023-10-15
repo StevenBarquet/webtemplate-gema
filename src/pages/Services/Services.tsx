@@ -5,7 +5,7 @@ import style from './Services.module.scss';
 import { useStringToHtml } from 'src/utils/functions/qwikUtils';
 // Texto de prueba
 const originalText = `
-<h1>Pruebita <span>anidada</span></h1>
+<h1>Pruebita</h1>
 Este es un texto de prueba. Aquí hay un <LinkCustom>link interno</LinkCustom> que te llevará a la página principal. 
 También tenemos un <Anchor>link externo</Anchor> que te llevará a una página externa.
 Además, algunas palabras están en <span>color diferente</span> y otras están en <b>negrita</b>.
