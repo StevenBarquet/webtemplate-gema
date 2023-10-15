@@ -57,12 +57,7 @@ export const ContactItem = component$<Props>(({ variant }) => {
   }
 
   return (
-    <a
-      href={link}
-      target="_blank"
-      rel="noopener noreferrer"
-      class={`${style['ContactItem']} ${style[variant]}`}
-    >
+    <a href={link} target="_blank" rel="noopener noreferrer" class={style['ContactItem']}>
       <IconComponent />
       <p>{label}</p>
     </a>

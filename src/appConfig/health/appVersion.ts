@@ -1,8 +1,8 @@
-export const commitID = `ba44f42bf996ffde52fa44a1bc7e54a828807387`;
+export const commitID = `b172b4084a1e3a47855bb50d3778c6117dceb946`;
     
-  export const commitMssg = `color correction`;
+  export const commitMssg = `styles min error fix`;
   
-  export const commitDate = `Sun Oct 15 2023 11:13:14 GMT-0600 (Central Standard Time)`;
+  export const commitDate = `Sun Oct 15 2023 11:16:10 GMT-0600 (Central Standard Time)`;
   
   export const commitAuthor = `sb`;
   
