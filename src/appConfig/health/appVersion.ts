@@ -1,8 +1,8 @@
-export const commitID = `4b49d12b2c60617750af7e3d6da8ec4b315594fe`;
+export const commitID = `9c2a0f163cf30e4494674abb29287f75f8e5cc6e`;
     
-  export const commitMssg = `services info fix`;
+  export const commitMssg = `useStringToHtml funcionando sin anidaciones ni listas`;
   
-  export const commitDate = `Sun Oct 15 2023 11:49:40 GMT-0600 (Central Standard Time)`;
+  export const commitDate = `Sun Oct 15 2023 13:03:02 GMT-0600 (Central Standard Time)`;
   
   export const commitAuthor = `sb`;
   

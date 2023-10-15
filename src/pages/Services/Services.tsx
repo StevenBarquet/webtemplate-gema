@@ -2,19 +2,39 @@
 import { component$ } from '@builder.io/qwik';
 // ---Styles
 import style from './Services.module.scss';
-import { Link } from '@builder.io/qwik-city';
+import { useStringToHtml } from 'src/utils/functions/qwikUtils';
+// Texto de prueba
+const originalText = `
+<h1>Pruebita <span>anidada</span></h1>
+Este es un texto de prueba. Aquí hay un <LinkCustom>link interno</LinkCustom> que te llevará a la página principal. 
+También tenemos un <Anchor>link externo</Anchor> que te llevará a una página externa.
+Además, algunas palabras están en <span>color diferente</span> y otras están en <b>negrita</b>.
+`;
+
+// Propiedades para las etiquetas Anchor
+const anchorProps = [
+  {
+    href: 'https://ejemplo.com',
+    target: '_blank',
+    rel: 'noopener noreferrer',
+  },
+];
+
+// Rutas para las etiquetas LinkCustom
+const hrefs = ['/ruta-interna'];
 
 /**
  * Services Component:  Descripción del comportamiento...
  */
 export const Services = component$(() => {
   // -----------------------CONSTS, HOOKS, STATES
+  const Aaa = useStringToHtml(originalText, { anchorProps, hrefs });
   // -----------------------MAIN METHODS
   // -----------------------AUX METHODS
   // -----------------------RENDER
   return (
     <div class={style['Services']}>
-      <ul>
+      {/* <ul>
         <li>
           <Link href="/asesoria-empresarial">Asesoría Empresarial</Link>
         </li>
@@ -27,7 +47,8 @@ export const Services = component$(() => {
         <li>
           <Link href="/capacitacion">Capacitación</Link>
         </li>
-      </ul>
+      </ul> */}
+      <Aaa />
     </div>
   );
 });

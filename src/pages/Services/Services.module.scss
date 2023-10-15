@@ -1,9 +1,12 @@
-@import '/src/styles/variables';
-@import '/src/styles/animations';
-@import '/src/styles/utils';
+@import "/src/styles/variables";
+@import "/src/styles/animations";
+@import "/src/styles/utils";
 
 .Services {
-      font-family: 'Inter';
+  font-family: "Inter";
+  span {
+    color: $colorOrange;
+  }
 }
 
 // // desk mov xs sm md lg xl xxl
