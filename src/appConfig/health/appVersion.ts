@@ -1,8 +1,8 @@
-export const commitID = `80a3bf80a83ced9df6d9bf71be4d9c4117b43f2a`;
+export const commitID = `4b49d12b2c60617750af7e3d6da8ec4b315594fe`;
     
-  export const commitMssg = `post basicos`;
+  export const commitMssg = `services info fix`;
   
-  export const commitDate = `Sun Oct 15 2023 11:45:48 GMT-0600 (Central Standard Time)`;
+  export const commitDate = `Sun Oct 15 2023 11:49:40 GMT-0600 (Central Standard Time)`;
   
   export const commitAuthor = `sb`;
   
