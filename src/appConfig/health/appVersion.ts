@@ -1,8 +1,8 @@
-export const commitID = `cd65faec065a1d26b12a09c4ec0038334f1d4fe7`;
+export const commitID = `044fca29cd55c1ceec942b75028d4876e299a960`;
     
-  export const commitMssg = `soporte para br, hr y img`;
+  export const commitMssg = `string to blog funcionando`;
   
-  export const commitDate = `Tue Oct 17 2023 13:16:52 GMT-0600 (Central Standard Time)`;
+  export const commitDate = `Tue Oct 17 2023 14:37:50 GMT-0600 (Central Standard Time)`;
   
   export const commitAuthor = `sb`;
   
