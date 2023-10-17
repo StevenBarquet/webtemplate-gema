@@ -6,8 +6,9 @@ import { stringToHtml } from 'src/utils/functions/qwikUtils';
 // Texto de prueba
 const originalText = `
 <h1>Pruebita</h1>
-Este es un texto de prueba. Aquí hay un <LinkCustom>link interno</LinkCustom> que te llevará a la página principal. <hr>
+<div><h1>Pruebita</h1></div><section><h2>Pruebita2</h2><h3>Pruebita3</h3></section> texto de prueba. Aquí hay un <LinkCustom>link interno</LinkCustom> que te llevará a la página principal.<hr />
 También tenemos un <Anchor>link externo</Anchor> que te llevará a una página externa.
+<br><img><br><img><br>
 Además, algunas palabras están en <span>color diferente</span> y otras están en <b>negrita</b>.
 `;
 
@@ -19,9 +20,19 @@ const anchorProps = [
     rel: 'noopener noreferrer',
   },
 ];
-
+// Propiedades para las etiquetas Anchor
+const imageProps = [
+  {
+    src: 'https://i.ytimg.com/vi/HZGysWjdmL8/maxresdefault.jpg',
+    alt: 'soraka va smurf',
+  },
+  {
+    src: '/images/profile.webp',
+    alt: 'imagen interna',
+  },
+];
 // Rutas para las etiquetas LinkCustom
-const hrefs = ['/ruta-interna'];
+const hrefs = ['/contacto'];
 
 /**
  * Services Component:  Descripción del comportamiento...
@@ -47,8 +58,7 @@ export const Services = component$(() => {
           <Link href="/capacitacion">Capacitación</Link>
         </li>
       </ul> */}
-      {stringToHtml(originalText, { anchorProps, hrefs })}
-      <hr />
+      {stringToHtml(originalText, { anchorProps, hrefs, imageProps })}
     </div>
   );
 });
