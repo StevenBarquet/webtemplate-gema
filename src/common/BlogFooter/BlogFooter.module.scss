@@ -1,0 +1,52 @@
+@import "/src/styles/variables";
+@import "/src/styles/animations";
+@import "/src/styles/utils";
+
+.BlogFooter {
+  font-family: "Inter";
+
+  padding: 50px 0px;
+  position: relative;
+  top: 25px;
+  .forge-row-element {
+    @include onlyIn(desk) {
+      width: 50%;
+      max-width: 350px;
+      margin: auto;
+    }
+    .linkButton {
+      background-color: $colorOrange;
+      width: 120px;
+      padding: 10px 15px;
+      text-align: center;
+      border-radius: 8px;
+      margin: auto;
+      box-shadow: 1px 2px 1px 2px #09090950;
+      &:hover {
+        background-color: $colorOrange8;
+        position: relative;
+        top: 3px;
+      }
+    }
+    a {
+      text-decoration: none;
+      color: #fff;
+    }
+    a .know {
+      color: $colorOrange;
+    }
+    .know {
+      color: $colorOrange;
+      text-align: center;
+      margin: 15px auto;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+// // desk mob xs sm md lg xl xxl
+// @include onlyIn(lg) {
+//   background-color: #f28181;
+// }
