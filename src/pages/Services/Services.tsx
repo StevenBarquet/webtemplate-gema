@@ -6,7 +6,7 @@ import { stringToHtml } from 'src/utils/functions/qwikUtils';
 // Texto de prueba
 const originalText = `
 <h1>Pruebita</h1>
-Este es un texto de prueba. Aquí hay un <LinkCustom>link interno</LinkCustom> que te llevará a la página principal. 
+Este es un texto de prueba. Aquí hay un <LinkCustom>link interno</LinkCustom> que te llevará a la página principal. <hr>
 También tenemos un <Anchor>link externo</Anchor> que te llevará a una página externa.
 Además, algunas palabras están en <span>color diferente</span> y otras están en <b>negrita</b>.
 `;
@@ -48,6 +48,7 @@ export const Services = component$(() => {
         </li>
       </ul> */}
       {stringToHtml(originalText, { anchorProps, hrefs })}
+      <hr />
     </div>
   );
 });

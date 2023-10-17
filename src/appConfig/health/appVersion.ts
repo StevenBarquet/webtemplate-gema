@@ -1,8 +1,8 @@
-export const commitID = `30175998011d8bdb2968c3a004c6a30a61f89cfd`;
+export const commitID = `0e01d98871994e08058b07bb9acea185127b74ea`;
     
-  export const commitMssg = `stringToHtml funcionando como función`;
+  export const commitMssg = `aaa`;
   
-  export const commitDate = `Sun Oct 15 2023 14:20:29 GMT-0600 (Central Standard Time)`;
+  export const commitDate = `Tue Oct 17 2023 08:18:28 GMT-0600 (Central Standard Time)`;
   
   export const commitAuthor = `sb`;
   

@@ -54,6 +54,8 @@ function processSimpleTag(parts: (string | null)[], index: number, tag: string) 
       return <article key={`article-${index}`}>{content}</article>;
     case 'b':
       return <b key={`bold-${index}`}>{content}</b>;
+    case 'p':
+      return <p key={`bold-${index}`}>{content}</p>;
     default:
       return null;
   }
@@ -92,7 +94,7 @@ export function stringToHtml(originalText: string, linkProps?: MarkupJsxProps) {
 
   const Jsx = component$(() => {
     const parts: (string | null)[] = originalText.split(
-      /(<\/?LinkCustom>|<\/?span.*?>|<\/?Anchor>|<\/?b>|<\/?section>|<\/?article>|<h[1-6]>|<\/h[1-6]>)/g,
+      /(<\/?LinkCustom>|<\/?span.*?>|<\/?Anchor>|<\/?b>|<\/?p>|<\/?section>|<\/?article>|<h[1-6]>|<\/h[1-6]>)/g,
     );
 
     let linkIndex = 0;
@@ -108,6 +110,7 @@ export function stringToHtml(originalText: string, linkProps?: MarkupJsxProps) {
         return processSimpleTag(parts, index, 'article');
       if (part !== null && /<h[1-6]>/.test(part)) return processHeading(parts, index);
       if (part !== null && part.startsWith('<b')) return processSimpleTag(parts, index, 'b');
+      if (part !== null && part.startsWith('<p')) return processSimpleTag(parts, index, 'p');
       if (part !== null && part.startsWith('</')) return null;
       if (part !== null) return part;
 
