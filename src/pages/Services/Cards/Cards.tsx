@@ -19,7 +19,7 @@ export const Cards = component$<Props>(({ img, label, url }) => {
   // -----------------------RENDER
   return (
     <Link href={url}>
-      <img src={img} />
+      <img src={img} width={90} height={90} />
       <div class="Cards">{label}</div>
     </Link>
   );
