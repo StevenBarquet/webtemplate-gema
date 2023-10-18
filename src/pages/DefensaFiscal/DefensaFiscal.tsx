@@ -2,10 +2,11 @@
 import { component$ } from '@builder.io/qwik';
 // ---Styles
 import style from './DefensaFiscal.module.scss';
-const text = `La recaudación es fundamental para las finanzas de nuestro país. No obstante, las autoridades fiscales deben realizar sus actos con apego a la ley y estricto respeto a los derechos fundamentales de los contribuyentes.  Desafortunadamente, frecuentemente las autoridades fiscales pueden exceder sus facultades o vulnerar derechos de los contribuyentes.
+import { locales } from 'src/appConfig/locales';
+import { stringToBlog } from 'src/utils/functions/qwikUtils';
+import { BlogHeader } from 'src/common/BlogHeader/BlogHeader';
+import { BlogFooter } from 'src/common/BlogFooter/BlogFooter';
 
-La relación entre contribuyente y fisco es desequilibrada y se caracteriza por una marcada diferencia en poder y recursos. Para realizar una defensa adecuada ante actos de autoridad ilegales, es necesario estar asistido por profesionales altamente especializados en materia fiscal, corporativa y derechos humanos. Nuestro equipo de colaboradores cuenta con amplia experiencia y preparación para atender de manera responsable y eficaz la defensa de sus clientes.
-`;
 /**
  * DefensaFiscal Component:  Descripción del comportamiento...
  */
@@ -16,8 +17,15 @@ export const DefensaFiscal = component$(() => {
   // -----------------------RENDER
   return (
     <div class={style['DefensaFiscal']}>
-      <h1>Defensa Fiscal</h1>
-      <p>{text}</p>
+      <BlogHeader title={locales.pages.DefensaFiscal.h1} />
+      <section class="blogCont">
+        {stringToBlog(locales.pages.DefensaFiscal.text)}
+        <br />
+        <div class="postImg">
+          <img src="/images/servicios/DefensaFiscal.webp" />
+        </div>
+      </section>
+      <BlogFooter backUrl="/servicios" />
     </div>
   );
 });

@@ -2,12 +2,10 @@
 import { component$ } from '@builder.io/qwik';
 // ---Styles
 import style from './Capacitacion.module.scss';
-const text = `Los recursos humanos son un componente fundamental del éxito de toda empresa. Una gerencia capacitada contará con la información necesaria para tomar decisiones eficientes orientadas a la prevención de riesgos. Los operadores capacitados disminuyen las contingencias y aportan al crecimiento de la organización. 
-
-Para atender esta necesidad contamos con un grupo de expertos que realizan capacitación laboral, debidamente registrada ante la STPS. Contamos con la capacidad de certificar distintos estándares de competencias habilitados por el CONOCER de la Secretaría de Educación Pública y también diseñamos programas  Ad Hoc  para atender necesidades específicas de su empresa. 
-
-Nuestra red de capacitación permite la colaboración con diversas instituciones nacionales e internacionales.
-`;
+import { locales } from 'src/appConfig/locales';
+import { BlogFooter } from 'src/common/BlogFooter/BlogFooter';
+import { BlogHeader } from 'src/common/BlogHeader/BlogHeader';
+import { stringToBlog } from 'src/utils/functions/qwikUtils';
 
 /**
  * Capacitacion Component:  Descripción del comportamiento...
@@ -19,8 +17,15 @@ export const Capacitacion = component$(() => {
   // -----------------------RENDER
   return (
     <div class={style['Capacitacion']}>
-      <h1>Capacitación</h1>
-      <p>{text}</p>
+      <BlogHeader title={locales.pages.Capacitacion.h1} />
+      <section class="blogCont">
+        {stringToBlog(locales.pages.Capacitacion.text)}
+        <br />
+        <div class="postImg">
+          <img src="/images/servicios/Capacitacion.webp" />
+        </div>
+      </section>
+      <BlogFooter backUrl="/servicios" />
     </div>
   );
 });

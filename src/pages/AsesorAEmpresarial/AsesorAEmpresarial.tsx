@@ -18,7 +18,7 @@ export const AsesorAEmpresarial = component$(() => {
   return (
     <article>
       <div class={style['AsesorAEmpresarial']}>
-        <BlogHeader title="Asesoría Empresarial" />
+        <BlogHeader title={locales.pages.asesoriaEmpresarial.h1} />
         <section class="blogCont">
           {stringToBlog(locales.pages.asesoriaEmpresarial.text)}
           <br />
