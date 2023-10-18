@@ -1,8 +1,8 @@
-export const commitID = `8b3daf847018b7e3844378fc928377bf6ebb83eb`;
+export const commitID = `66d8788020ecc8ead1f337b5392996990488ed2f`;
     
-  export const commitMssg = `servicios con estilos al 100`;
+  export const commitMssg = `pagina de servicios al 100`;
   
-  export const commitDate = `Tue Oct 17 2023 18:02:40 GMT-0600 (Central Standard Time)`;
+  export const commitDate = `Tue Oct 17 2023 18:36:20 GMT-0600 (Central Standard Time)`;
   
   export const commitAuthor = `sb`;
   

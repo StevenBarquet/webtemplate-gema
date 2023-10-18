@@ -4,8 +4,41 @@
 
 .Services {
   font-family: "Inter";
-  span {
+
+  .forge-row-element {
+    // @include onlyIn(desk) {
+    //   width: 65%;
+    //   max-width: 700px;
+    //   margin: auto;
+    // }
+  }
+  img {
+    display: block;
+    margin: 0px auto;
+    height: auto;
+    position: relative;
+    width: 90px;
+    border-radius: 15px;
+    top: 40px;
+  }
+  a {
+    text-decoration: none;
+  }
+  .Cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     color: $colorOrange;
+    font-size: 32px;
+
+    background-color: #6969699d;
+    border-radius: 15px;
+    padding: 40px 20px;
+    width: 80%;
+    max-width: 270px;
+    margin: 15px auto;
+    height: 120px;
   }
 }
 

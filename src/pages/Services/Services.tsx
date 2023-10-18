@@ -2,7 +2,9 @@
 import { component$ } from '@builder.io/qwik';
 // ---Styles
 import style from './Services.module.scss';
-import { Link } from '@builder.io/qwik-city';
+import { Mcol, Mrow } from 'qwik-forge-grid';
+import { customResponsive } from 'src/utils/functions/responsiveUtils';
+import { Cards } from './Cards/Cards';
 
 /**
  * Services Component:  Descripción del comportamiento...
@@ -14,20 +16,32 @@ export const Services = component$(() => {
   // -----------------------RENDER
   return (
     <div class={style['Services']}>
-      <ul>
-        <li>
-          <Link href="/asesoria-empresarial">Asesoría Empresarial</Link>
-        </li>
-        <li>
-          <Link href="/defensa-fiscal">Defensa Fiscal</Link>
-        </li>
-        <li>
-          <Link href="/mediacion">Mediación</Link>
-        </li>
-        <li>
-          <Link href="/capacitacion">Capacitación</Link>
-        </li>
-      </ul>
+      <Mrow>
+        <Mcol {...customResponsive(50, 100)}>
+          <Cards
+            img="/images/services-icons/asesoria-empresarial.webp"
+            label="Asesoría Empresarial"
+            url="/asesoria-empresarial"
+          />
+        </Mcol>
+        <Mcol {...customResponsive(50, 100)}>
+          <Cards
+            img="/images/services-icons/defensa-fiscal.webp"
+            label="Defensa Fiscal"
+            url="/defensa-fiscal"
+          />
+        </Mcol>
+        <Mcol {...customResponsive(50, 100)}>
+          <Cards img="/images/services-icons/mediacion.webp" label="Mediación" url="/mediacion" />
+        </Mcol>
+        <Mcol {...customResponsive(50, 100)}>
+          <Cards
+            img="/images/services-icons/capacitacion.webp"
+            label="Capacitación"
+            url="/capacitacion"
+          />
+        </Mcol>
+      </Mrow>
     </div>
   );
 });
