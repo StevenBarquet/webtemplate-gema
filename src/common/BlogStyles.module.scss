@@ -4,6 +4,13 @@
 
 .BlogStyles {
   font-family: "Inter";
+  hr {
+    margin: 0;
+    padding: 0;
+    border: 1px solid $colorOrange;
+    width: 88%;
+    margin: 15px auto 0 auto;
+  }
   a {
     color: $colorOrange8;
   }
@@ -11,6 +18,7 @@
     font-size: 18px;
     line-height: 25px;
     margin: 0px auto 0px auto;
+    text-align: justify;
   }
 
   .firstP {
@@ -97,23 +105,28 @@
   }
 
   h3 {
-    font-size: 18px;
+    font-size: 24px;
     font-weight: 700;
-    line-height: 25px;
+    line-height: 30px;
+    color: $colorOrange;
     margin: 15px auto 0px auto;
-    @include onlyIn(mob) {
-      width: 90%;
-    }
-    @include onlyIn(dek) {
-      width: 65%;
-      max-width: 800px;
+    width: 90%;
+    @include onlyIn(desk) {
+      max-width: 850px;
     }
   }
   .blogCont {
-    background-color: #0e0c0d79;
-    width: 85%;
-    margin: 0 auto;
-
-    padding: 25px 20px;
+    background-color: #6969699d;
+    @include onlyIn(mob) {
+      width: 83%;
+      margin: 0px auto 10px auto;
+      padding: 15px;
+    }
+    @include onlyIn(desk) {
+      width: 70%;
+      max-width: 850px;
+      margin: 0px auto 10px auto;
+      padding: 20px;
+    }
   }
 }

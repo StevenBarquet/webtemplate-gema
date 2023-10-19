@@ -19,6 +19,7 @@ export const DefensaFiscal = component$(() => {
   return (
     <div class={style['BlogStyles']}>
       <BlogHeader title={locales.pages.DefensaFiscal.h1} />
+      <hr />
       <section class="blogCont">
         {stringToBlog(locales.pages.DefensaFiscal.text)}
         <br />

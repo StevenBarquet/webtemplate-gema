@@ -20,6 +20,7 @@ export const AsesorAEmpresarial = component$(() => {
     <article>
       <div class={style['BlogStyles']}>
         <BlogHeader title={locales.pages.asesoriaEmpresarial.h1} />
+        <hr />
         <section class="blogCont">
           {stringToBlog(locales.pages.asesoriaEmpresarial.text)}
           <br />

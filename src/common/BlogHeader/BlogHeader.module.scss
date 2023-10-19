@@ -4,55 +4,33 @@
 
 .BlogHeader {
   font-family: "Inter";
+  width: 88%;
+  margin: 0px 6%;
+  position: relative;
+  top: -8px;
   h1 {
     font-weight: 700;
     font-size: 34px;
     text-align: center;
-    color: $colorOrange;
-    width: 88%;
-    margin: 0 6%;
-    // desk mob xs sm md lg xl xxl
-    @include onlyIn(desk) {
-      background-image: url(/images/background-blog.svg);
-      background-position: 0 -150px;
-      background-size: 100% 500px;
-      background-repeat: no-repeat;
-      padding-top: 100px;
-      padding-bottom: 250px;
-    }
-    @include onlyIn(mob) {
-      background-image: url(/images/background-blog.svg);
-      background-position: 50% -190px;
-      background-size: auto 80vh;
-      background-repeat: no-repeat;
+    color: $colorOrange3;
 
-      padding-top: 100px;
-      padding-bottom: 250px;
-    }
-  }
+    // // desk mob xs sm md lg xl xxl
+    // @include onlyIn(desk) {
+    //   background-image: url(/images/background-blog.svg);
+    //   background-position: 0 -150px;
+    //   background-size: 100% 500px;
+    //   background-repeat: no-repeat;
+    //   padding-top: 100px;
+    //   padding-bottom: 250px;
+    // }
+    // @include onlyIn(mob) {
+    //   background-image: url(/images/background-blog.svg);
+    //   background-position: 50% -190px;
+    //   background-size: auto 80vh;
+    //   background-repeat: no-repeat;
 
-  img {
-    display: block;
-    margin: 0px auto;
-    height: auto;
-    position: relative;
-    @include onlyIn(mob) {
-      width: 85%;
-      border-radius: 15px;
-      top: -170px;
-    }
-    @include onlyIn(desk) {
-      width: 60%;
-      max-width: 850px;
-      border-radius: 15px;
-      top: -170px;
-    }
-  }
-  hr {
-    margin: 0;
-    padding: 0;
-    border: 1px solid $colorOrange;
-    width: 88%;
-    margin: 0 6%;
+    //   padding-top: 100px;
+    //   padding-bottom: 250px;
+    // }
   }
 }

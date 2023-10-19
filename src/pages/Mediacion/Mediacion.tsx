@@ -19,6 +19,7 @@ export const Mediacion = component$(() => {
   return (
     <div class={style['BlogStyles']}>
       <BlogHeader title={locales.pages.Mediacion.h1} />
+      <hr />
       <section class="blogCont">
         {stringToBlog(locales.pages.Mediacion.text, locales.pages.Mediacion.textProps)}
         <br />
