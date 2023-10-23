@@ -1,8 +1,8 @@
-export const commitID = `d446d21132049364d1e42ed34fe1918602d2e491`;
+export const commitID = `c74fb54a92bce3bb467fbc48adb090c07d7e0cf8`;
     
-  export const commitMssg = `Creacion de componente drawer`;
+  export const commitMssg = `drawer logic fixed y hamburger en nav`;
   
-  export const commitDate = `Mon Oct 23 2023 13:33:42 GMT-0600 (Central Standard Time)`;
+  export const commitDate = `Mon Oct 23 2023 15:15:58 GMT-0600 (Central Standard Time)`;
   
   export const commitAuthor = `sb`;
   

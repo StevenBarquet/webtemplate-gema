@@ -9,8 +9,6 @@ export const LayoutProvider = component$(() => {
   // -----------------------RENDER
   return (
     <>
-      <div id="drawer" />
-      <div id="modal" />
       <Navbar />
       <main>
         <Slot />

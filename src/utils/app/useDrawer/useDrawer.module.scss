@@ -29,7 +29,7 @@
     .header {
       border-bottom: 1px solid $secondary;
     }
-    .header section button {
+    .header .closable {
       color: $exit;
       &:hover {
         color: $exitHover;
@@ -61,7 +61,7 @@
     .header {
       border-bottom: 1px solid $secondary;
     }
-    .header section button {
+    .header .closable {
       color: $exit;
       &:hover {
         color: $exitHover;
@@ -140,27 +140,19 @@
 
   .header {
     padding: 16px 24px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 
-    section {
-      display: flex;
-      align-items: center;
+    .closable {
+      margin-right: 16px; // Espaciado entre el botón y el título
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-size: 18px;
+    }
 
-      button {
-        margin-right: 16px; // Espaciado entre el botón y el título
-        background: none;
-        border: none;
-        cursor: pointer;
-        font-size: 18px;
-      }
-
-      .default {
-        font-size: 18px;
-        font-weight: 600;
-        color: $colorDark6;
-      }
+    .default {
+      font-size: 18px;
+      font-weight: 600;
+      color: $colorDark6;
     }
   }
 

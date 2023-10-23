@@ -6,13 +6,35 @@ import { Fcol, Frow } from 'qwik-forge-grid';
 import { Link } from '@builder.io/qwik-city';
 import { customResponsive } from 'src/utils/functions/responsiveUtils';
 import { Logo } from './Logo/Logo';
-import { NavLink } from './NavLink/NavLink';
+import { useFStore } from 'src/store/config/storeConfig';
+import { BsList } from '@qwikest/icons/bootstrap';
+import { useDrawer } from 'src/utils/app/useDrawer/useDrawer';
+import { DeskButtons } from './DeskButtons/DeskButtons';
+import { MobButtons } from './MobButtons/MobButtons';
 
 /**
  * Navbar Component:  Descripción del comportamiento...
  */
 export const Navbar = component$(() => {
   // -----------------------CONSTS, HOOKS, STATES
+  const { state } = useFStore();
+  const { handleOpen, Drawer } = useDrawer({
+    theme: 'dark',
+    defaultOpen: false,
+    headerCloseModal: true,
+    title: (
+      <div class={style.Mobile}>
+        <Logo />
+      </div>
+    ),
+    content: (
+      <div class={style.Mobile}>
+        <Frow vAlign="middle" hAlign="center" vSpace={10}>
+          <MobButtons />
+        </Frow>
+      </div>
+    ),
+  });
   // -----------------------MAIN METHODS
   // -----------------------AUX METHODS
   // -----------------------RENDER
@@ -24,19 +46,17 @@ export const Navbar = component$(() => {
             <Logo />
           </Link>
         </Fcol>
-        <Fcol {...customResponsive(15, 50)}>
-          <NavLink href="/" label="INICIO" />
-        </Fcol>
-        <Fcol {...customResponsive(15, 50)}>
-          <NavLink href="/servicios/" label="SERVICIOS" />
-        </Fcol>
-        <Fcol {...customResponsive(15, 50)}>
-          <NavLink href="/contacto/" label="CONTACTO" />
-        </Fcol>
-        <Fcol {...customResponsive(20, 50)}>
-          <NavLink href="/cronicas-de-paz/" label="CRÓNICAS DE PAZ" />
-        </Fcol>
+        {state.appInfo.isMobile ? (
+          <Fcol {...customResponsive(15, 50)}>
+            <button class="hamburger" onClick$={handleOpen}>
+              <BsList />
+            </button>
+          </Fcol>
+        ) : (
+          <DeskButtons />
+        )}
       </Frow>
+      <Drawer />
     </header>
   );
 });
