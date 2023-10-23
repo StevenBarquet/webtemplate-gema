@@ -7,6 +7,7 @@ import { customResponsive } from 'src/utils/functions/responsiveUtils';
 import { COMPANY_YEAR } from 'src/appConfig/globalConfig';
 import { ContactItem } from 'src/common/ContactItem/ContactItem';
 import { Link } from '@builder.io/qwik-city';
+import { locales } from 'src/appConfig/locales';
 
 /**
  * Footer Component:  Descripción del comportamiento...
@@ -37,7 +38,7 @@ export const Footer = component$(() => {
         <h5>Revisa nuestro Aviso de Privacidad</h5>
       </Link>
       <h6>
-        {`© ${COMPANY_YEAR} ABOGADOS, Inc. Todos los derechos reservados. ¿Te gusta éste sitio? Revisa `}
+        {`© ${COMPANY_YEAR} ${locales.comps.footer.rights}. Todos los derechos reservados. ¿Te gusta éste sitio? Revisa `}
         <a href="https://www.forgemytech.com/" target="_blank" rel="noopener noreferrer">
           forgemytech.com
         </a>

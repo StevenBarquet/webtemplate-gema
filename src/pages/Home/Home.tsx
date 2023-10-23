@@ -6,6 +6,7 @@ import { locales } from 'src/appConfig/locales';
 import { Fcol, Frow } from 'qwik-forge-grid';
 import { basicResponsive } from 'src/utils/functions/responsiveUtils';
 import ProgileImg from '/public/images/profile.webp?jsx';
+import { useDrawer } from 'src/utils/app/useDrawer/useDrawer';
 
 /**
  * Home Component:  Descripción del comportamiento...
@@ -13,10 +14,13 @@ import ProgileImg from '/public/images/profile.webp?jsx';
  */
 export const Home = component$(() => {
   // -----------------------CONSTS, HOOKS, STATES
-
+  const { handleOpen } = useDrawer({
+    content: 'Contenido MLG',
+  });
   // -----------------------RENDER
   return (
     <div class={style.Home}>
+      <button onClick$={handleOpen}>Abrir</button>
       <Frow vAlign="middle" hAlign="center">
         <Fcol {...basicResponsive(25)}>
           <h1>{locales.pages.home.h1}</h1>

@@ -1,0 +1,184 @@
+@import "/src/styles/variables";
+@import "/src/styles/animations";
+@import "/src/styles/utils";
+
+.overlay {
+  position: fixed; // Hacer que el overlay sea fijo
+  top: 0; // Alinear al borde superior
+  right: 0; // Alinear al borde derecho
+  bottom: 0; // Alinear al borde inferior
+  left: 0; // Alinear al borde izquierdo
+  background-color: rgba(0, 0, 0, 0); // Color de fondo semitransparente
+  z-index: 999; // Asegurarse de que esté por encima de otros contenidos, pero debajo del drawer
+  &.visible {
+    background-color: rgba(0, 0, 0, 0.5); // Color de fondo semitransparente
+  }
+}
+
+// Configuraciones generales
+.useDrawer {
+  &.light {
+    $background: $colorLight1;
+    $font: $colorDark5;
+    $secondary: $colorLight3;
+    $secondaryHover: $colorLight7;
+    $exit: $colorLight7;
+    $exitHover: $colorLight3;
+
+    background-color: $background;
+    .header {
+      border-bottom: 1px solid $secondary;
+    }
+    .header section button {
+      color: $exit;
+      &:hover {
+        color: $exitHover;
+      }
+    }
+    .header .default {
+      color: $font;
+    }
+    .content {
+      color: $font;
+    }
+    .footer {
+      background-color: $background;
+      border-top: 1px solid $secondary;
+    }
+    .footer .default {
+      color: $font;
+    }
+  }
+  &.dark {
+    $background: $colorDark5;
+    $font: $colorLight;
+    $secondary: $colorDark1;
+    $secondaryHover: $colorLight4;
+    $exit: $colorLight7;
+    $exitHover: $colorLight3;
+
+    background-color: $background;
+    .header {
+      border-bottom: 1px solid $secondary;
+    }
+    .header section button {
+      color: $exit;
+      &:hover {
+        color: $exitHover;
+      }
+    }
+    .header .default {
+      color: $font;
+    }
+    .content {
+      color: $font;
+    }
+    .footer {
+      background-color: $background;
+      border-top: 1px solid $secondary;
+    }
+    .footer .default {
+      color: $font;
+    }
+  }
+  &.size-378 {
+    width: 378px;
+    max-width: 100vw;
+    .footer {
+      width: 378px;
+      max-width: 100vw;
+    }
+  }
+  &.size-736 {
+    width: 736px;
+    max-width: 100vw;
+    .footer {
+      width: 736px;
+      max-width: 100vw;
+    }
+  }
+  @include onlyIn(xs) {
+    &.size-378 {
+      width: 100vw;
+      .footer {
+        width: 100vw;
+      }
+    }
+    &.size-736 {
+      width: 100vw;
+      .footer {
+        width: 100vw;
+      }
+    }
+  }
+
+  &.left {
+    left: 0;
+    animation: slideInLeft 0.3s;
+  }
+  &.right {
+    right: 0;
+    animation: slideInRight 0.3s;
+  }
+}
+.useDrawer {
+  font-family: "Inter";
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  box-shadow: -2px 0 8px rgba(0, 0, 0, 0.15);
+  overflow-y: auto;
+  z-index: 1000; // Asegurándonos de que el drawer esté por encima de otros elementos
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0;
+  }
+
+  .header {
+    padding: 16px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    section {
+      display: flex;
+      align-items: center;
+
+      button {
+        margin-right: 16px; // Espaciado entre el botón y el título
+        background: none;
+        border: none;
+        cursor: pointer;
+        font-size: 18px;
+      }
+
+      .default {
+        font-size: 18px;
+        font-weight: 600;
+        color: $colorDark6;
+      }
+    }
+  }
+
+  .content {
+    margin: 0;
+    padding: 0;
+    overflow-y: hidden;
+  }
+
+  .footer {
+    position: fixed;
+    bottom: 0;
+
+    .default {
+      display: block;
+      padding: 16px 24px;
+      font-size: 16px;
+      font-weight: 400;
+    }
+  }
+}

@@ -1,6 +1,6 @@
 // ---Dependencies
 import { component$ } from '@builder.io/qwik';
-import { locales } from 'src/appConfig/locales';
+import { blogs } from 'src/appConfig/blogs';
 import { BlogFooter } from 'src/common/BlogFooter/BlogFooter';
 import { BlogHeader } from 'src/common/BlogHeader/BlogHeader';
 // ---Styles
@@ -17,12 +17,12 @@ export const MecanismosAlternativosDeSoluciNDeConflictosEnMXico = component$(() 
   // -----------------------RENDER
   return (
     <div class={style['BlogStyles']}>
-      <BlogHeader title={locales.blog.MecanismosAlternativosDeSoluciNDeConflictosEnMXico.h1} />
+      <BlogHeader title={blogs.MecanismosAlternativosDeSoluciNDeConflictosEnMXico.h1} />
       <hr />
       <section class="blogCont">
         {stringToBlog(
-          locales.blog.MecanismosAlternativosDeSoluciNDeConflictosEnMXico.text,
-          locales.blog.MecanismosAlternativosDeSoluciNDeConflictosEnMXico.textProps,
+          blogs.MecanismosAlternativosDeSoluciNDeConflictosEnMXico.text,
+          blogs.MecanismosAlternativosDeSoluciNDeConflictosEnMXico.textProps,
         )}
       </section>
       <BlogFooter backUrl="/cronicas-de-paz" />
