@@ -27,16 +27,6 @@ export const Home = component$(() => {
             <h2>{locales.pages.home.h2}</h2>
             <p>{locales.pages.home.P}</p>
             <br />
-            <h3>{locales.pages.home.CERTIFICACIONES.title}</h3>
-            <ul>
-              {locales.pages.home.CERTIFICACIONES.list.map((item) => (
-                <li key={item.label}>
-                  <a href={item.href} target="_blank" rel="noopener noreferrer">
-                    {item.label}
-                  </a>
-                </li>
-              ))}
-            </ul>
           </section>
         </Fcol>
       </Frow>
