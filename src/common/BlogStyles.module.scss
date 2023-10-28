@@ -25,21 +25,19 @@
     margin-top: -90px;
   }
 
-  .postImg {
+  img {
     margin: 20px auto;
+    display: block;
+    height: auto;
+    margin: 0px auto;
+    border-radius: 15px;
+    width: 100%;
     @include onlyIn(mob) {
       width: 90%;
     }
     @include onlyIn(desk) {
       width: 76%;
       max-width: 800px;
-    }
-    img {
-      display: block;
-      height: auto;
-      margin: 0px auto;
-      border-radius: 15px;
-      width: 100%;
     }
   }
 

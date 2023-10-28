@@ -48,12 +48,30 @@ La tarea de la expedición de una Ley General de Mecanismos Alternativos de Solu
 </p>`,
     textProps: {
       imageProps: [
-        { src: '/images/logo.png', alt: 'temp image' },
-        { src: '/images/logo.png', alt: 'temp image' },
-        { src: '/images/logo.png', alt: 'temp image' },
-        { src: '/images/logo.png', alt: 'temp image' },
-        { src: '/images/logo.png', alt: 'temp image' },
-        { src: '/images/logo.png', alt: 'temp image' },
+        {
+          src: '/images/blog/MecanismosAlternativosDeSoluciNDeConflictosEnMXico/Imagen_1.webp',
+          alt: 'temp image',
+        },
+        {
+          src: '/images/blog/MecanismosAlternativosDeSoluciNDeConflictosEnMXico/Imagen_2.webp',
+          alt: 'temp image',
+        },
+        {
+          src: '/images/blog/MecanismosAlternativosDeSoluciNDeConflictosEnMXico/Imagen_3.webp',
+          alt: 'temp image',
+        },
+        {
+          src: '/images/blog/MecanismosAlternativosDeSoluciNDeConflictosEnMXico/Imagen_4.webp',
+          alt: 'temp image',
+        },
+        {
+          src: '/images/blog/MecanismosAlternativosDeSoluciNDeConflictosEnMXico/Imagen_5.webp',
+          alt: 'temp image',
+        },
+        {
+          src: '/images/blog/MecanismosAlternativosDeSoluciNDeConflictosEnMXico/Imagen_6.webp',
+          alt: 'temp image',
+        },
       ],
     },
   },
