@@ -1,8 +1,8 @@
-export const commitID = `ad79767f04e2943deac7ff331bfc61f4d35f7e1d`;
+export const commitID = `809adc4a540d6b59edfdd33b5e61d4f3b41ed981`;
     
-  export const commitMssg = `imagenes actualizadas`;
+  export const commitMssg = `blog 2, corrección de imagen caida en blog 1 y metadatos agregados en blogs y servicios`;
   
-  export const commitDate = `Fri Oct 27 2023 18:35:25 GMT-0600 (Central Standard Time)`;
+  export const commitDate = `Tue Nov 28 2023 08:09:00 GMT-0600 (Central Standard Time)`;
   
   export const commitAuthor = `sb`;
   

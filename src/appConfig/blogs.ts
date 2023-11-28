@@ -1,7 +1,15 @@
-export const blogs = {
-  MecanismosAlternativosDeSoluciNDeConflictosEnMXico: {
-    h1: 'Mecanismos Alternativos de Solución de Conflictos en México. ',
-    text: `      <img>
+export const blogs =
+  // {
+  //   [k: string]: {
+  //     h1: string;
+  //     text: string;
+  //     textProps: MarkupJsxProps;
+  //   };
+  // }
+  {
+    blog1: {
+      h1: 'Mecanismos Alternativos de Solución de Conflictos en México. ',
+      text: `      <img>
     <p><span>Introducción:</span> Los Mecanismos Alternos de Solución de Conflictos son una alternativa real, viable y legal para resolver conflictos sin tener que recurrir a un tribunal. Actualmente son reconocidos por la Constitución y por diversas leyes vigentes. No obstante, debe tenerse en cuenta que, los principios, aplicabilidad, procedimientos y resultados pueden variar significativamente entre una materia y otra.
 
 
@@ -46,33 +54,74 @@ El sistema jurídico mexicano permite su aplicación en las materias disponibles
 
 La tarea de la expedición de una Ley General de Mecanismos Alternativos de Solución de Controversias que le ha sido encomendada al legislador es una tarea titánica y de gran relevancia para el sistema de justicia mexicano. Obliga a los legisladores a diseñar una ley que comprenda todas las aplicaciones posibles de los mecanismos, en el ámbito internacional y nacional. Una oportunidad histórica que la LXV Legislatura del Congreso de la Unión ha asumido con el mayor compromiso y en una actitud abiertamente democrática y de la que se augura un gran resultado. Esperamos confiados en que será el cimiento del modelo más progresista de Justicia Alternativa para América Latina.
 </p>`,
-    textProps: {
-      imageProps: [
-        {
-          src: '/images/blog/MecanismosAlternativosDeSoluciNDeConflictosEnMXico/Imagen_1.webp',
-          alt: 'temp image',
-        },
-        {
-          src: '/images/blog/MecanismosAlternativosDeSoluciNDeConflictosEnMXico/Imagen_2.webp',
-          alt: 'temp image',
-        },
-        {
-          src: '/images/blog/MecanismosAlternativosDeSoluciNDeConflictosEnMXico/Imagen_3.webp',
-          alt: 'temp image',
-        },
-        {
-          src: '/images/blog/MecanismosAlternativosDeSoluciNDeConflictosEnMXico/Imagen_4.webp',
-          alt: 'temp image',
-        },
-        {
-          src: '/images/blog/MecanismosAlternativosDeSoluciNDeConflictosEnMXico/Imagen_5.webp',
-          alt: 'temp image',
-        },
-        {
-          src: '/images/blog/MecanismosAlternativosDeSoluciNDeConflictosEnMXico/Imagen_6.webp',
-          alt: 'temp image',
-        },
-      ],
+      textProps: {
+        imageProps: [
+          {
+            src: '/images/blog/MecanismosAlternativosDeSoluciNDeConflictosEnMXico/Imagen_1.webp',
+            alt: 'temp image',
+          },
+          {
+            src: '/images/blog/MecanismosAlternativosDeSoluciNDeConflictosEnMXico/imagen_2.webp',
+            alt: 'temp image',
+          },
+          {
+            src: '/images/blog/MecanismosAlternativosDeSoluciNDeConflictosEnMXico/Imagen_3.webp',
+            alt: 'temp image',
+          },
+          {
+            src: '/images/blog/MecanismosAlternativosDeSoluciNDeConflictosEnMXico/Imagen_4.webp',
+            alt: 'temp image',
+          },
+          {
+            src: '/images/blog/MecanismosAlternativosDeSoluciNDeConflictosEnMXico/Imagen_5.webp',
+            alt: 'temp image',
+          },
+          {
+            src: '/images/blog/MecanismosAlternativosDeSoluciNDeConflictosEnMXico/Imagen_6.webp',
+            alt: 'temp image',
+          },
+        ],
+      },
     },
-  },
-};
+    blog2: {
+      h1: 'Mecanismos Alternativos de Solución de Controversias en Materia Administrativa y Fiscal',
+      text: `<img>
+    <br>
+    <p>Originalmente, nuestra Constitución de 1917 estableció en el artículo 124, la cláusula federal. Así configuró la competencia legislativa para las entidades federativas como regla general, mientras que reservó a la federación un <i>numerus clausus</i> de materias.  Bajo este entendido, consideramos al sistema jurídico integrado por una norma suprema, leyes federales, leyes locales y, por disposición del artículo 115,  reglamentos municipales. 
+
+    Categoría aparte merecen las <i>leyes del Congreso de la Unión</i>,  que menciona el artículo 133 de la Carta Fundamental y que, en conjunto con la propia constitución y los tratados internacionales suscritos y ratificados,  constituyen “la Ley Suprema de toda la unión”: Podemos rescatar de la redacción  3 puntos relevantes:</p>
+
+    <p>
+    <span>a)</span> Las leyes del congreso de la Unión no pueden ser emitidas discrecionalmente por el Congreso sino que emergen de una cláusula constitucional específica que constriñe al Congreso a dictarla;
+
+<span>b)</span> El establecimiento de una cláusula constitucional entraña la renuncia expresa, del constituyente o del poder revisor, a la potestad distribuidora de competencias entre la federación y las entidades federativas, como excepción expresa a las reglas del artículo 124;
+
+<span>c)</span> Una vez emitidas formalmente, las Leyes del Congreso de la Unión, integran el parámetro de regularidad y validez material del resto del ordenamiento jurídico, incluso leyes federales, leyes locales y reglamentos municipales; y
+
+<span>d)</span> Constituyen una categoría legislativa diversa que no es de materia federal y tampoco corresponde a las leyes locales. Se trata una norma que, siendo válida, es jerárquicamente superior al resto de las leyes y cuya aplicación trasciende a los ámbitos federal, estatal, de la Ciudad de México y de los municipios.</p>
+<p>
+Entonces, las leyes del congreso de la unión o leyes generales, pueden positivizar derechos humanos en el orden interno, dotar de contenido a uno o más derechos fundamentales, establecer principios, bases, establecer garantías instrumentales o institucionales o incluso estandarizar procesos bajo criterios de eficiencia y eficacia. 
+
+En concreto, el pasado 15 de noviembre de 2023, se presentó el Proyecto de Ley General de Mecanismos Alternativos de Solución de Controversias que, previo proceso legislativo, conformará parámetro de regularidad en cuanto al Derecho Humano de Acceso a la Justicia, en la vertiente de justicia alternativa, una vertiente no desarrollada en el Derecho Mexicano y tampoco en la jurisprudencia interamericana.
+
+El proyecto presentado incorpora en el Capítulo VII la aplicación de los mecanismos en el ámbito administrativo y fiscal, lo que representa un gran avance en materia de justicia y un escenario alentador frente a una conflictividad creciente en la materia. En el último informe del Magistrado Rafael Anzures Uribe en cierre de octubre de 2022 el valor total de los juicios en el Tribunal Federal de Justicia Administrativa ascendía a 792 mil 541 millones de pesos. Si consideramos que el PIB de 2022 fue de 18,3 billones de pesos mexicanos, apreciar de una cantidad equivalente al 4% del PIB, más de la mitad de la deuda externa para ese periodo.
+
+En este contexto, celebro la incorporación de este capítulo, en sintonía con la propuesta que presentamos por escrito el pasado 30 de octubre <Anchor>consulta el documento aquí</Anchor>. Estaremos pendientes del proceso legislativo y del texto final de la Ley, la más progresista en toda Iberoamérica.</p>
+    `,
+
+      textProps: {
+        imageProps: [
+          {
+            src: '/images/blog/blog2/caratula.webp',
+            alt: 'temp image',
+          },
+        ],
+        anchorProps: [
+          {
+            href: '/downloads/opinionTecnica.pdf',
+            download: '',
+          },
+        ],
+      },
+    },
+  };

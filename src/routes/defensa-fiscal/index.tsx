@@ -1,4 +1,3 @@
-
 import { component$ } from '@builder.io/qwik';
 import type { DocumentHead } from '@builder.io/qwik-city';
 import { DefensaFiscal } from 'src/pages/DefensaFiscal/DefensaFiscal';
@@ -12,11 +11,12 @@ export default component$(() => {
 });
 
 export const head: DocumentHead = {
-  title: 'Welcome to Qwik',
+  title: 'DEFENSA FISCAL | GEMAAYECAC',
   meta: [
     {
       name: 'description',
-      content: 'Qwik site description',
+      content:
+        'La recaudación es fundamental para las finanzas de nuestro país. No obstante, las autoridades fiscales deben realizar sus actos con apego a la ley y estricto respeto a los derechos fundamentales de los contribuyentes.  Desafortunadamente, frecuentemente las autoridades fiscales pueden exceder sus facultades o vulnerar derechos de los contribuyentes.',
     },
   ],
   links: [

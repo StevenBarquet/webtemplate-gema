@@ -1,4 +1,3 @@
-
 import { component$ } from '@builder.io/qwik';
 import type { DocumentHead } from '@builder.io/qwik-city';
 import { BlogSelector } from 'src/pages/BlogSelector/BlogSelector';
@@ -12,11 +11,11 @@ export default component$(() => {
 });
 
 export const head: DocumentHead = {
-  title: 'Welcome to Qwik',
+  title: 'CRÓNICAS DE PAZ | GEMAAYECAC',
   meta: [
     {
       name: 'description',
-      content: 'Qwik site description',
+      content: '¡Descubre lo que está en tendencia con nuestros artículos más populares! ',
     },
   ],
   links: [

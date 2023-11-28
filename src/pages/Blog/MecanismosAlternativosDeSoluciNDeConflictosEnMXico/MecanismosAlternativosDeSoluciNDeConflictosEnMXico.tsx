@@ -17,14 +17,9 @@ export const MecanismosAlternativosDeSoluciNDeConflictosEnMXico = component$(() 
   // -----------------------RENDER
   return (
     <div class={style['BlogStyles']}>
-      <BlogHeader title={blogs.MecanismosAlternativosDeSoluciNDeConflictosEnMXico.h1} />
+      <BlogHeader title={blogs.blog1.h1} />
       <hr />
-      <section class="blogCont">
-        {stringToBlog(
-          blogs.MecanismosAlternativosDeSoluciNDeConflictosEnMXico.text,
-          blogs.MecanismosAlternativosDeSoluciNDeConflictosEnMXico.textProps,
-        )}
-      </section>
+      <section class="blogCont">{stringToBlog(blogs.blog1.text, blogs.blog1.textProps)}</section>
       <BlogFooter backUrl="/cronicas-de-paz" />
     </div>
   );

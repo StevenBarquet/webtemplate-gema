@@ -11,11 +11,12 @@ export default component$(() => {
 });
 
 export const head: DocumentHead = {
-  title: 'Welcome to Qwik',
+  title: 'MECANISMOS ALTERNATIVOS DE SOLUCIÓN DE CONFLICTOS EN MÉXICO | GEMAAYECAC',
   meta: [
     {
       name: 'description',
-      content: 'Qwik site description',
+      content:
+        'Los Mecanismos Alternos de Solución de Conflictos son una alternativa real, viable y legal para resolver conflictos sin tener que recurrir a un tribunal. Actualmente son reconocidos por la Constitución y por diversas leyes vigentes. No obstante, debe tenerse en cuenta que, los principios, aplicabilidad, procedimientos y resultados pueden variar significativamente entre una materia y otra...',
     },
   ],
   links: [

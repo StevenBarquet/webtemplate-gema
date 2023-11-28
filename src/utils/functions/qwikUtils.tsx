@@ -4,6 +4,7 @@ interface AnchorProps {
   href: string;
   target?: string;
   rel?: string;
+  download?: string;
 }
 
 interface ImageProps {
@@ -11,7 +12,7 @@ interface ImageProps {
   alt?: string;
 }
 
-type MarkupJsxProps = {
+export type MarkupJsxProps = {
   /** hrefs para los LinkCustom, se inyectan en orden de aparición en "originalText" */
   hrefs?: string[];
   /** Props de tag anchor (<a></a>), se inyectan en orden de aparición en "originalText" */
@@ -62,6 +63,8 @@ function processSimpleTag(parts: (string | null)[], index: number, tag: string) 
   switch (tag) {
     case 'span':
       return <span key={`span-${index}`}>{content}</span>;
+    case 'italic':
+      return <i key={`i-${index}`}>{content}</i>;
     case 'section':
       return <section key={`section-${index}`}>{content}</section>;
     case 'div':
@@ -182,13 +185,14 @@ export function stringToChildJsx({
   const anchorProps = linkProps?.anchorProps || [];
 
   const parts: (string | null)[] = content.split(
-    /(<\/?LinkCustom>|<\/?span.*?>|<\/?Anchor>|<\/?b>)/g,
+    /(<\/?LinkCustom>|<\/?span.*?>|<\/?i.*?>|<\/?Anchor>|<\/?b>)/g,
   );
 
   const nodes = parts.map((part, index) => {
     if (part === '<LinkCustom>') return processLinkCustom(parts, index, hrefs, linkIndex++);
     if (part === '<Anchor>') return processAnchor(parts, index, anchorProps, anchorIndex++);
     if (part !== null && part.startsWith('<span')) return processSimpleTag(parts, index, 'span');
+    if (part !== null && part.startsWith('<i>')) return processSimpleTag(parts, index, 'italic');
     if (part !== null && part.startsWith('<b')) return processSimpleTag(parts, index, 'b'); // Choca con br poner al final
     if (part !== null && part.startsWith('</')) return null;
     if (part !== null) return part;
